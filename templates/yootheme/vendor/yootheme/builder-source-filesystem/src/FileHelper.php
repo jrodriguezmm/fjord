@@ -1,0 +1,58 @@
+<?php
+
+namespace YOOtheme\Builder\Source\Filesystem;
+
+use YOOtheme\File;
+use YOOtheme\Path;
+use YOOtheme\Str;
+
+class FileHelper
+{
+    /**
+     * Query files.
+     *
+     * @param array $args
+     *
+     * @return array
+     */
+    public static function query(array $args = [])
+    {
+        $args += ['offset' => 0, 'limit' => 10, 'order' => '', 'order_direction' => 'ASC'];
+
+        if (empty($args['pattern'])) {
+            return [];
+        }
+
+        $pattern = $args['pattern'];
+        $pattern = Str::startsWith($pattern, '~') ? $pattern : Path::join('~', $pattern);
+
+        $files = File::glob($pattern, GLOB_NOSORT);
+
+        // filter out any dir
+        $files = array_filter($files, [File::class, 'isFile']);
+
+        // order
+        if ($args['order'] === 'rand') {
+
+            shuffle($files);
+
+        } else {
+
+            if ($args['order'] === 'name') {
+                natcasesort($files);
+            }
+
+            // direction
+            if ($args['order_direction'] === 'DESC') {
+                $files = array_reverse($files);
+            }
+        }
+
+        // offset/limit
+        if ($args['offset'] || $args['limit']) {
+            $files = array_slice($files, (int) $args['offset'], (int) $args['limit'] ?: null);
+        }
+
+        return $files;
+    }
+}

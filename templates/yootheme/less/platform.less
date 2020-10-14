@@ -1,0 +1,44 @@
+//
+// Loads Bootstrap Styles
+//
+// ========================================================================
+
+@import "../vendor/yootheme/theme-joomla/assets/less/bootstrap/bootstrap.less";
+
+/*
+ * Leading article
+ * Needed for Joomla
+ */
+
+.tm-leading-article .uk-article:last-child { padding-bottom: @global-margin; }
+
+/*
+ * Hide text from Page Break plugin
+ */
+
+.pagenavcounter { display: none; }
+
+/*
+ * Style pager from Page Break plugin
+ */
+
+.pagenavcounter ~ .pager {
+    margin-top: @margin-medium-margin;
+    margin-bottom: @margin-medium-margin;
+}
+
+/*
+ * Remove `br` elements if whole content is shown on one page using Page Break plugin
+ */
+
+.tm-page-break-remove-br ~ br { display: none; }
+
+/*
+ * Fix Drop Cap with Page Break
+ */
+
+.uk-dropcap > .tm-page-break-first-page + .pagenavcounter + p::first-letter:extend(.uk-dropcap > p:first-of-type::first-letter all) {}
+
+
+.hook-joomla-misc;
+.hook-joomla-misc() {}

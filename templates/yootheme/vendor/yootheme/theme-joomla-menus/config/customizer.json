@@ -1,0 +1,63 @@
+{
+    "sections": {
+        "joomla-menus": {
+            "title": "Menus",
+            "priority": 30,
+            "help": {
+                "Menus": [
+                    {
+                        "title": "Managing Menus",
+                        "src": "https://www.youtube-nocookie.com/watch?v=h8tOHBWEI0w&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "1:06",
+                        "documentation": "support/yootheme-pro/joomla/menus",
+                        "support": "support/search?tags=125&q=menu"
+                    },
+                    {
+                        "title": "Using Menu Positions",
+                        "src": "https://www.youtube-nocookie.com/watch?v=-QRUipik-wE&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "1:07",
+                        "documentation": "support/yootheme-pro/joomla/menus#menu-positions",
+                        "support": "support/search?tags=125&q=menu%20position"
+                    },
+                    {
+                        "title": "Using the Menu Module",
+                        "src": "https://www.youtube-nocookie.com/watch?v=0YkeSfGcytY&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "0:55",
+                        "documentation": "support/yootheme-pro/joomla/menus#menu-module",
+                        "support": "support/search?tags=125&q=menu%20module"
+                    }
+                ],
+                "Menu Items": [
+                    {
+                        "title": "Creating Menu Dividers",
+                        "src": "https://www.youtube-nocookie.com/watch?v=-BUCkWKhEbs&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "0:54",
+                        "documentation": "support/yootheme-pro/joomla/menus#menu-divider",
+                        "support": "support/search?tags=125&q=menu%20divider"
+                    },
+                    {
+                        "title": "Creating Menu Heading",
+                        "src": "https://www.youtube-nocookie.com/watch?v=MBWZG-ZS5PY&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "0:54",
+                        "documentation": "support/yootheme-pro/joomla/menus#menu-heading",
+                        "support": "support/search?tags=125&q=menu%20heading"
+                    },
+                    {
+                        "title": "Creating Navbar Text Items",
+                        "src": "https://www.youtube-nocookie.com/watch?v=qlvsAA71GFw&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "1:38",
+                        "documentation": "support/yootheme-pro/joomla/menus#navbar-text-item",
+                        "support": "support/search?tags=125&q=navbar%20text%20item"
+                    },
+                    {
+                        "title": "Creating Accordion Menus",
+                        "src": "https://www.youtube-nocookie.com/watch?v=bFaHYDRapfs&amp;list=PLrqT0WH0HPdPfykSwhMt6Jl2_RgJ6ixU-",
+                        "duration": "1:25",
+                        "documentation": "support/yootheme-pro/joomla/menus#accordion-menu",
+                        "support": "support/search?tags=125&q=accordion%20menu"
+                    }
+                ]
+            }
+        }
+    }
+}
